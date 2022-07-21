@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>repoLibrary</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+
+<body id="stopScroll">
+    <div class="intro shadow">
+        <div class="content">
+            <h3>Hi. My name is <span>Ariyan Shihab</span></h3>
+            <p>
+                Here you willl find some very basic project That have done though out this learning journy! I hope You like it. If not, then please give me an constructive critisim or a feedback about how develop it in better quality.
+            </p>
+            <div class="button-container">
+                <a href="https://github.com/AriyanShihab"> github </a>
+                <a href="https://www.linkedin.com/in/ariyanshihab/"> Linkedin </a>
+            </div>
+        </div>
+        <div class="img">
+            <img class="banerImg" src="./images/ariyan.png" alt="" />
+        </div>
+    </div>
+
+    <!-- projects start -->
+    <div class="cardHolder">
+        <!-- cat button -->
+        <div class="cat-btn-hollder" id="btnContainer">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="raw">Raw Code</button>
+            <button class="filter" data-filter="api">API Call</button>
+
+            <button class="filter" data-filter="cdn">CDN</button>
+
+            <button class="filter" data-filter="landing">landing</button>
+        </div>
+        <div class="container" id="cardContainer"></div>
+    </div>
+
+    <div class="popup" id="popupParent">
+        <div class="pCard">
+            <div class="head">
+                <h3>Hey There, Thank you visitnig</h3>
+                <h2 id="close" class="close">X</h2>
+            </div>
+
+            <p>
+                well, I have to say something about these project you are going to visit. <br /> when I was working on these ui projects, I dont have idea about, DRY (dont reapet yourselt), clean code, redme File, optimise code, best practises, language
+                convensaion and some other programmoing concepts. so, the code base of these project are not proffesional. <br /> I'm trying to convert them in a better code base with the good practice and optimization. but it will take some time, sorry
+                for that.
+            </p>
+        </div>
+    </div>
+    <script src="./js/data.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

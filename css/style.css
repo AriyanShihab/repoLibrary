@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@400;600&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+    font-family: ciraPro;
+    src: url(../webFonts/Fontspring-DEMO-ceraroundpro-medium.otf);
+}
+
+body {
+    position: relative;
+}
+
+.shadow {
+    background: #fff;
+    box-shadow: 10px 10px 24px #eaebef, -10px -10px 24px #ffffff;
+    border: 1px solid e7ebf4;
+    border-radius: 4px;
+}
+
+button :active {
+    outline: none;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.intro {
+    max-width: 1024px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.banerImg {
+    max-width: 70%;
+}
+
+.banerImg {
+    transform: rotate(5deg);
+}
+
+.content {
+    max-width: 60%;
+}
+
+.content h3 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #01213b;
+    margin: 20px 0px;
+    font-family: ciraPro;
+}
+
+.content h3 span {
+    color: #f6490a;
+    font-family: ciraPro;
+}
+
+.content p {
+    color: #01213b;
+    font-size: 18px;
+    font-family: ciraPro;
+}
+
+.cat-btn-hollder {
+    width: 75vw;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.filter {
+    font-size: 18px;
+    font-weight: bold;
+    color: #dceafd;
+    background: #01213b;
+    padding: 5px 15px;
+    border: 1px solid #dceafd;
+    border-radius: 35px;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.active {
+    background: #dceafd;
+    color: #01213b;
+}
+
+.button-container {
+    margin-top: 30px;
+}
+
+.content a,
+.projectLinks a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #dceafd;
+    padding: 10px 15px;
+    background-color: #01213b;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+}
+
+body,
+.cardHolder {
+    background-color: #f9fafe;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 10px;
+}
+
+.card {
+    max-width: 350px;
+    margin: 10px auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 4px;
+    z-index: 1;
+    border: 1px solid #e7ebf4;
+    animation: slideInRight;
+    animation-duration: 0.5s;
+    box-shadow: 10px 10px 24px #eaebef, -10px -10px 24px #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.projectTitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #232429;
+    margin: 20px 0px;
+    padding: 5px;
+    border: 1px solid #e7ebf4;
+    border-radius: 5px;
+    font-family: ciraPro;
+}
+
+.shortDescreption {
+    color: #232429;
+}
+
+.projectLinks a {
+    font-size: 16px;
+}
+
+.projectLinks {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* ffrom codepen */
+
+.hide {
+    animation: hide 0.5s ease 0s 1 normal forwards;
+    transform-origin: center;
+    display: none;
+}
+
+.show {
+    animation: show 0.5s ease 0s 1 normal forwards;
+    transform-origin: center;
+    display: block;
+}
+
+@keyframes hide {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+}
+
+@keyframes show {
+    0% {
+        transform: scale(0);
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* from coddepen end */
+
+
+/* popup */
+
+.popup {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e7ebf4;
+    z-index: 2;
+    display: none;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.pCard {
+    width: 450px;
+    padding: 10px;
+    background: #fff;
+    /* box-shadow: 10px 10px 24px #eaebef, -10px -10px 24px #ffffff; */
+    border: 1px solid e7ebf4;
+    border-radius: 4px;
+    color: #232429;
+}
+
+.pCard p {
+    line-height: 30px;
+}
+
+.showPOpup {
+    display: flex;
+}
+
+.close {
+    color: #effff9;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #f6490a;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: -10px;
+    transform: translateY(-10px);
+    animation: scaling 1s infinite alternate;
+    animation-delay: 3s;
+    cursor: pointer;
+}
+
+@keyframes scaling {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.stop {
+    overflow: hidden;
+    position: fixed;
+}
