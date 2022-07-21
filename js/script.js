@@ -1,4 +1,3 @@
-const filters = document.querySelectorAll(".filter");
 const cardContainer = document.getElementById(`cardContainer`);
 
 cardContainer.innerHTML = `
@@ -25,9 +24,12 @@ ${project
   .join(" ")}
 `;
 
+const filters = document.querySelectorAll(".filter");
+
 filters.forEach((filter) => {
   filter.addEventListener("click", function () {
     let selectedFilter = filter.getAttribute("data-filter");
+    console.log(selectedFilter);
     let itemsToHide = document.querySelectorAll(
       `.container .card:not([data-filter='${selectedFilter}'])`
     );
@@ -40,12 +42,12 @@ filters.forEach((filter) => {
       itemsToShow = document.querySelectorAll(".container [data-filter]");
     }
 
-    itemsToHide.forEach((el) => {
+    itemsToHide.map((el) => {
       el.classList.add("hide");
       el.classList.remove("show");
     });
 
-    itemsToShow.forEach((el) => {
+    itemsToShow.map((el) => {
       el.classList.remove("hide");
       el.classList.add("show");
     });
@@ -77,6 +79,31 @@ let popUpFire = function () {
   popupParent.classList.add(`showPOpup`);
   body.classList.add(`stop`);
 };
-window.onload = function () {
-  setTimeout(popUpFire, 4000);
-};
+// window.onload = function () {
+//   setTimeout(popUpFire, 4000);
+// };
+
+// side navigation
+
+const sideNavagition = document.getElementById(`sideNavigation`);
+const footerCredit = document.getElementById(`footerCredit`);
+
+function showNavigation() {
+  let scroll = window.scrollY;
+  if (scroll > 200 && scroll <= 2700) {
+    sideNavagition.style.left = "0px";
+  } else if (scroll > 700) {
+    console.log(`its over`);
+    sideNavagition.classList.add(`convartToFooter`);
+    footerCredit.innerHTML = `Develop by Shihab`;
+  } else {
+    sideNavagition.style.left = "0px";
+    sideNavagition.classList.remove(`convartToFooter`);
+    footerCredit.innerHTML = ``;
+  }
+  if (scroll < 5) {
+    sideNavagition.style.left = `-100px`;
+  }
+}
+
+window.addEventListener(`scroll`, showNavigation);
