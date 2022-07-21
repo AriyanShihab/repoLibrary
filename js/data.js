@@ -163,6 +163,6 @@ const project = [{
         discription: `this is the 5th practice project of an web development  course`,
         liveLink: "https://ariyanshihab.github.io/meatDivider/",
         sourseCode: "https://github.com/AriyanShihab/meatDivider",
-        filterTag: "raw",
+        filterTag: "raw landing",
     },
 ];

@@ -82,19 +82,20 @@ img {
 .filter {
     font-size: 18px;
     font-weight: bold;
-    color: #dceafd;
-    background: #01213b;
+    color: #fa6957;
     padding: 5px 15px;
-    border: 1px solid #dceafd;
+    border: 1px solid #e7ebf4;
     border-radius: 35px;
     margin: 5px;
     cursor: pointer;
     position: relative;
+    background: #fff;
+    box-shadow: 10px 10px 24px #eaebef, -10px -10px 24px #ffffff;
 }
 
 .active {
-    background: #dceafd;
-    color: #01213b;
+    background: #fa6957;
+    color: #fff;
 }
 
 .button-container {
@@ -122,6 +123,7 @@ body,
     max-width: 1200px;
     margin: auto;
     padding: 30px 10px;
+    margin-bottom: 140px;
 }
 
 .card {
@@ -289,4 +291,51 @@ body,
 .stop {
     overflow: hidden;
     position: fixed;
+}
+
+.icon-holder {
+    position: fixed;
+    top: 45vh;
+    left: -100px;
+    padding: 20px;
+    background: #fa6957;
+    border-radius: 40px;
+    z-index: 99;
+    transition: 0.5s;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-holder a i {
+    color: #fff;
+    font-size: 24px;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.convartToFooter {
+    position: fixed;
+    top: calc(100vh - 100px);
+    width: 100%;
+    height: 100px;
+    border-radius: 0;
+}
+
+.convartToFooter .flex {
+    flex-direction: row;
+    align-items: center;
+}
+
+.convartToFooter .flex i {
+    margin: 10px;
+}
+
+.icon-holder h3 {
+    color: #fff;
+    text-align: center;
 }
