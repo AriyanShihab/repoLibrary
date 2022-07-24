@@ -42,12 +42,12 @@ filters.forEach((filter) => {
       itemsToShow = document.querySelectorAll(".container [data-filter]");
     }
 
-    itemsToHide.map((el) => {
+    itemsToHide.forEach((el) => {
       el.classList.add("hide");
       el.classList.remove("show");
     });
 
-    itemsToShow.map((el) => {
+    itemsToShow.forEach((el) => {
       el.classList.remove("hide");
       el.classList.add("show");
     });
