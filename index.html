@@ -7,30 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- font awsome -->
     <script src="https://kit.fontawesome.com/e5f73cdde9.js" crossorigin="anonymous" defer=""></script>
+
     <title>repoLibrary</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
 </head>
 
 <body id="stopScroll">
-    <div class="intro shadow">
-        <div class="content">
-            <h3>Hi. My name is <span>Ariyan Shihab</span></h3>
-            <p>
-                Here you willl find some very basic project That have done though out this learning journy! I hope You like it. If not, then please give me an constructive critisim or a feedback about how develop it in better quality.
-            </p>
-            <div class="button-container">
-                <a href="https://github.com/AriyanShihab"> github </a>
-                <a href="https://www.linkedin.com/in/ariyanshihab/"> Linkedin </a>
+    <div class="intro-container">
+        <div class="intro shadow">
+            <div class="content">
+                <h3>Hi. My name is <span>Ariyan Shihab</span></h3>
+                <p>
+                    Here you willl find some very basic project That have done though out this learning journy! I hope You like it. If not, then please give me an constructive critisim or a feedback about how develop it in better quality.
+                </p>
+                <div class="mt-30">
+                    <a href="https://github.com/AriyanShihab"><i class="fa-brands fa-github greadiant"></i></a>
+                    <a href="https://www.linkedin.com/in/ariyanshihab/"><i class="fa-brands fa-linkedin greadiant"></i></a>
+                    <a href="https://twitter.com/AriyanShihab9"><i class="fa-brands fa-twitter-square greadiant"></i></a>
+                </div>
+
             </div>
-        </div>
-        <div class="img">
-            <img class="banerImg" src="./images/ariyan.png" alt="" />
+            <div class="img">
+                <img class="banerImg" src="./images/profileImage.webp" alt="" />
+            </div>
         </div>
     </div>
 
     <!-- projects start -->
-    <div class="cardHolder">
+    <div class="cardHolder ">
         <!-- cat button -->
         <div class="cat-btn-hollder" id="btnContainer">
             <button class="filter active" data-filter="all">All</button>
@@ -41,7 +46,7 @@
 
             <button class="filter" data-filter="landing">landing</button>
         </div>
-        <div class="container" id="cardContainer"></div>
+        <div class=" grid container" id="cardContainer"></div>
     </div>
 
     <div class="popup" id="popupParent">
@@ -60,15 +65,20 @@
     </div>
     <div class="icon-holder" id="sideNavigation">
         <div class="flex">
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://github.com/AriyanShihab"><i class="fa-brands fa-github greadiant"></i></a>
+            <a href="https://www.linkedin.com/in/ariyanshihab/"><i class="fa-brands fa-linkedin greadiant"></i></a>
+            <a href="https://twitter.com/AriyanShihab9"><i class="fa-brands fa-twitter-square greadiant"></i></a>
         </div>
 
         <h3 id="footerCredit"></h3>
+
     </div>
-    <script src="./js/data.js"></script>
-    <script src="./js/script.js"></script>
+
+</body>
+
+<script src="./js/data.js"></script>
+<script src="./js/script.js"></script>
+<h2 class="text-center text-light my-5 display-2">Test</h2>
 </body>
 
 </html>

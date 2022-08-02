@@ -1,22 +1,17 @@
-/*
-
-img link
-project title
-sort description
-live site link
-source code link
-most important filter tag
-
-
-
-*/
-
 const project = [{
         img: "./images/phclone dark.png",
         title: "ProgrammingHero Clone",
         discription: " Try to clone the UI of on of leading EDtech Platform Of Bangladesh Programming Hero Landing Page",
         liveLink: "https://ariyanshihab.github.io/phColne/",
         sourseCode: "https://github.com/AriyanShihab/phColne",
+        filterTag: "landing",
+    },
+    {
+        img: "./images/ed-world.webp.png",
+        title: "Ed Tech Landing page",
+        discription: " A simple ed Tech landing page using bootstrap for an course assignment.",
+        liveLink: "https://ariyanshihab.github.io/edTech/",
+        sourseCode: "https://github.com/AriyanShihab/edTech",
         filterTag: "landing",
     },
     {
